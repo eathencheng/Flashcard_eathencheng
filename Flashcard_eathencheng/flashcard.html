@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>字卡學習</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="logo"><span>TOEIC Flashcard Trainer</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="開啟選單">☰</button>
+  <nav class="nav" id="navMenu">
+    <a href="index.html">首頁</a>
+    <a href="flashcard.html">字卡學習</a>
+    <a href="quiz.html">單字測驗</a>
+    <a href="review.html">錯題複習</a>
+    <label class="mode-label">Mode
+      <select id="themeSelect" class="mode-select" aria-label="選擇顯示模式">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+  </nav>
+</header>
+<main class="page-wrap"><section class="section-title center"><p class="tag">Flashcard Mode</p><h1>多益單字字卡學習</h1><p>系統會記住你上次學到的位置，下次進入可接續學習。</p></section>
+<section class="toolbar"><label>分類：<select id="categoryFilter"><option value="All">全部分類</option></select></label><label>難度：<select id="levelFilter"><option value="All">全部難度</option><option value="Basic">Basic</option><option value="Intermediate">Intermediate</option><option value="Advanced">Advanced</option></select></label><button class="btn small" id="shuffleBtn">隨機洗牌</button><button class="btn small outline" id="resetProgressBtn">重置本分類進度</button></section>
+<section class="resume-panel"><strong id="resumeText">正在讀取上次進度...</strong><span id="lastSavedText"></span></section>
+<section class="progress-panel"><div><strong id="progressText">0 / 0</strong><span>目前進度</span></div><div><strong id="knownText">0</strong><span>已學會</span></div><div><strong id="unknownText">0</strong><span>待複習</span></div><div class="progress-bar"><span id="progressBar"></span></div></section>
+<section class="flashcard-stage"><div class="flashcard" id="flashcard"><div class="card-face front"><p class="pill" id="frontCategory">Category</p><h2 id="frontWord">Loading...</h2><p id="frontPart">part of speech</p><p class="hint">你知道這個單字的意思嗎？</p></div><div class="card-face back"><p class="pill" id="backCategory">Category</p><h2 id="backWord">word</h2><p><strong>中文：</strong><span id="meaning"></span></p><p><strong>詞性：</strong><span id="partOfSpeech"></span></p><p><strong>例句：</strong><span id="example"></span></p><p><strong>翻譯：</strong><span id="translation"></span></p><p><strong>同義字：</strong><span id="synonyms"></span></p><p><strong>常見搭配：</strong><span id="collocation"></span></p></div></div></section>
+<section class="actions-row centered"><button class="btn outline" id="prevBtn">← 上一張</button><button class="btn success" id="knowBtn">我會，下一張</button><button class="btn warning" id="flipBtn">我不會，翻卡</button><button class="btn danger" id="reviewBtn">↑ 加入錯題本</button><button class="btn secondary" id="nextBtn">下一張 →</button></section>
+<p class="keyboard-tip">快捷鍵：空白鍵翻卡｜← 上一張｜→ 下一張｜↑ 加入錯題｜K 我會</p>
+</main><footer>© 2026 made by eathencheng</footer><script src="js/app.js"></script><script src="js/flashcard.js"></script></body></html>

@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>單字測驗</title><link rel="stylesheet" href="css/style.css"></head><body><header class="site-header">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="logo"><span>TOEIC Flashcard Trainer</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="開啟選單">☰</button>
+  <nav class="nav" id="navMenu">
+    <a href="index.html">首頁</a>
+    <a href="flashcard.html">字卡學習</a>
+    <a href="quiz.html">單字測驗</a>
+    <a href="review.html">錯題複習</a>
+    <label class="mode-label">Mode
+      <select id="themeSelect" class="mode-select" aria-label="選擇顯示模式">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+  </nav>
+</header><main class="page-wrap"><section class="section-title center"><p class="tag">Quiz Mode</p>
+  <h1>單字測驗</h1><p>只會測驗「已學會」與「錯題複習」中的單字；答錯會自動加入錯題本。</p>
+</section><section class="quiz-card"><div class="quiz-top">
+  <span id="quizProgress">第 1 題 / 10 題</span><span id="quizScore">分數：0</span></div>
+  <p class="quiz-source" id="quizSourceText">測驗範圍：已學會 + 錯題複習</p>
+  <h2 id="quizWord">Loading...</h2><div id="options" class="options"></div>
+  <p id="quizFeedback" class="feedback"></p>
+  <button class="btn primary" id="nextQuizBtn">下一題</button>
+  <button class="btn secondary" id="restartQuizBtn">重新測驗</button>
+  <a class="btn outline" href="flashcard.html" id="goLearnBtn">先去字卡學習</a></section></main>
+  <footer>© 2026 made by eathencheng</footer><script src="js/app.js"></script><script src="js/quiz.js"></script></body></html>

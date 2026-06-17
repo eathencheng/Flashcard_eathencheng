@@ -1,0 +1,33 @@
+<!doctype html><html lang="zh-Hant">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1121225期末專題</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="logo"><span>112122之網資期末專題</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="開啟選單">☰</button>
+  <nav class="nav" id="navMenu">
+    <a href="index.html">首頁</a>
+    <a href="flashcard.html">字卡學習</a>
+    <a href="quiz.html">單字測驗</a>
+    <a href="review.html">錯題複習</a>
+    <label class="mode-label">Mode
+      <select id="themeSelect" class="mode-select" aria-label="選擇顯示模式">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+  </nav>
+</header>
+<main>
+<section class="hero"><div class="hero-text">
+  <p class="tag">TOEIC Vocabulary Trainer</p><h1>用字卡主動回想，TOEIC 高頻單字</h1>
+  <p class="lead">以多益考試為準備方向，透過字卡、測驗與錯題複習提升單字記憶效率。</p>
+  <div class="hero-actions"><a class="btn primary" href="flashcard.html">開始/繼續學習</a>
+    <a class="btn secondary" href="quiz.html">進入單字測驗</a></div></div>
+    <div class="hero-card"><img src="images/banner.svg" alt="study banner"></div></section>
+<section class="exam-panel"><div class="section-title"><p class="tag">TOEIC Goal</p>
+  <h2>考試倒數與目標分數</h2><p>可在首頁直接設定考試日期與目標分數，資料會自動儲存在瀏覽器。</p></div>
+  <div class="exam-grid two"><div class="exam-card"><span id="daysLeft">--</span><p>距離考試天數</p></div><div class="exam-card"><span id="targetScoreText">800</span><p>目標分數</p></div></div><div class="goal-form"><label>考試日期 <input type="date" id="examDateInput"></label><label>目標分數 <input type="number" id="targetScoreInput" min="10" max="990" step="5" value="800"></label><button class="btn primary" id="saveGoalBtn">儲存目標</button></div></section>
+<section class="stats-grid"><div class="stat-card"><span id="totalWords">1060</span><p>單字數</p></div><div class="stat-card"><span id="masteredCount">0</span><p>已學會</p></div><div class="stat-card"><span id="reviewCount">0</span><p>錯題本</p></div><div class="stat-card"><span id="lastProgressText">尚未開始</span><p>上次學習進度</p></div></section>
+<section class="section motivation"><h2>製作動機</h2>
+  <p>老子想畢業</p></section>
+</main><footer>© 2026 made by eathencheng</footer><script src="js/app.js"></script></body></html>
